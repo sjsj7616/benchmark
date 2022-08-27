@@ -1,0 +1,84 @@
+{
+    "title":"HS key",
+    "rules":[
+        {
+            "description":"scan_next_track -> ⌘q",
+            "manipulators":
+            [
+                {
+                    "type":"basic",
+                    "from":{
+                        "consumer_key_code":"scan_next_track"
+                        },
+                        "to":
+                        
+                            {
+                                "key_code": "q",
+                                "modifiers": ["command"
+        ]
+                                }
+                         
+                 }
+            ]
+        
+        },
+        {
+            "description":"scan_previous_track -> lunch",
+            "manipulators":
+            [
+                {
+                    "type":"basic",
+                    "from":{
+                        "consumer_key_code":"scan_previous_track"
+                        },
+                        "to":
+                        
+                            {
+                                "shell_command": "open -a '유니콘 HTTPS.app'; open -a 'Downie 4.app'; open '/Users/hoseongseon/PycharmProjects/pythonProject/dist/see.app'"
+                                }
+                         
+                 }
+            ]
+        
+        },
+        {
+            "description":"cal -> hide",
+            "manipulators":
+            [
+                {
+                    "type":"basic",
+                    "from":{
+                        "consumer_key_code":"al_calculator"
+                        },
+                        "to":
+                        
+                            {
+                                "key_code": "h",
+                                "modifiers": ["command"]
+                                }
+                         
+                 }
+            ]
+        
+        },
+        {
+            "description":"play_or_pause -> ⌘q",
+            "manipulators":
+            [
+                {
+                    "type":"basic",
+                    "from":{
+                        "consumer_key_code":"play_or_pause"
+                        },
+                        "to":
+                        
+                            {
+                                "shell_command":"open -a 'finder.app'"
+                                }
+                         
+                 }
+            ]
+        
+        }
+    ]
+}
